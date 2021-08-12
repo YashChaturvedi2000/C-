@@ -31,12 +31,12 @@ void inorder(Node *temp){
 
 int main()
 {
-        struct Node* root = newNode(10);
+        Node* root = newNode(10);
         root->left = newNode(11);
         root->left->left = newNode(7);
         root->left->right = newNode(12);
         root->right = newNode(9);
         root->right->left = newNode(15);
         root->right->right = newNode(8);
-        
+        inorder(root);
 }
