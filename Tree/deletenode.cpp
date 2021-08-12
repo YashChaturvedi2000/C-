@@ -112,5 +112,8 @@ int main(){
     root->right->left=newNode(6);
     root->right->right=newNode(7);
     inorder(root);
+    root=deletion(root,4);
+    cout<<endl;
+    inorder(root);
     return 0;
 }
